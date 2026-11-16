@@ -1,0 +1,73 @@
+/* Scroll Suave nativo em toda a página */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Compensação da Navbar fixa ao rolar para uma seção */
+header#home,
+section {
+  scroll-margin-top: 70px;
+}
+
+/* Transições globais de tema */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Estilos dos links do menu */
+.nav-link.nav-link-anchor {
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link.nav-link-anchor.active {
+  color: #198754 !important;
+  font-weight: 700;
+}
+
+/* Hero Carousel */
+.hero-bg-1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+  min-height: 70vh;
+}
+
+.hero-bg-2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+              url('https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat !important;
+  min-height: 70vh;
+}
+
+.card-img-top {
+  height: 220px;
+  object-fit: cover;
+}
+
+.card {
+  transition: transform 0.2s ease-in-out, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Botões do Filtro de Produtos */
+.btn-filtro {
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.btn-filtro.active {
+  background-color: #198754 !important;
+  color: #ffffff !important;
+  border-color: #198754 !important;
+}
+
+/* Ajustes Dark Mode */
+[data-bs-theme="dark"] .bg-body-tertiary {
+  background-color: #1a1d20 !important;
+}
+
+[data-bs-theme="dark"] .card {
+  background-color: #212529;
+  border-color: #373b3e;
+}
