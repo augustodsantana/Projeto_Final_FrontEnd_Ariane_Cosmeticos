@@ -185,7 +185,7 @@ document.addEventListener('DOMContentLoaded', () => {
         alert('Seu carrinho está vazio!');
         return;
       }
-      alert('Pedido efetuado com sucesso! Obrigado por comprar na Ariane Coscméticos.');
+      alert('Pedido efetuado com sucesso! Obrigado por comprar na Ariane Cosméticos.');
       carrinho = [];
       atualizarCarrinho();
       const modalEl = document.getElementById('carrinhoModal');
